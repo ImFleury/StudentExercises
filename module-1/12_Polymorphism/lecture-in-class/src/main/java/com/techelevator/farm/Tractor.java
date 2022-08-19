@@ -1,0 +1,22 @@
+package com.techelevator.farm;
+
+public class Tractor implements Singable, Root{
+
+    private String name;
+    private String sound;
+
+    public Tractor(){
+        this.name = "Tractor";
+        this.sound = "vroom!";
+
+    }
+
+    public String getName() {
+        return this.name;
+    }
+
+
+    public String getSound() {
+        return this.sound;
+    }
+}

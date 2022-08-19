@@ -1,0 +1,30 @@
+#boxContainer {
+    border: 1px solid black;
+
+}
+#boxContainer div {
+    margin: 4px;
+}
+#box1 {
+border-color: aqua;
+border-style: groove;
+border-width: 1px;
+height: 50px;
+width: 50px;
+background-color: yellow;
+}
+
+#box2 {
+    border: 1px groove;
+    height: 50px;
+    width: 50px;
+    background-color: blue;
+}
+
+.box {
+    height: 50px;
+    width: 50px;
+    margin: 10px;
+    display: inline-block;
+    padding: 5px;
+}

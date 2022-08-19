@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+    <script src="script.js" defer></script>
+
+</head>
+
+<body>
+
+    <main id="myApp">
+        <header>
+            <h1>Intro to Vue</h1>
+        </header>
+        <div>
+            <label for="greetingValue">Enter new Greeting:</label>
+            <input id="greetingValue" type="text" v-model="greeting">
+        </div>
+        <br/>
+        <div v-for="index in num" :key="index">
+            {{ greeting }} {{index}}
+        </div>
+
+    </main>
+
+</body>
+
+</html>

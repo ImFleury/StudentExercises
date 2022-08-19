@@ -1,0 +1,3 @@
+int birdsOnABranch = 4;
+		int birdsThatFlyAway = 1;
+		int birdsRemaining = birdsOnABranch - birdsThatFlyAway;

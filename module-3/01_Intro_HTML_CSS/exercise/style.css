@@ -1,0 +1,24 @@
+header { 
+    border: 5px solid fuchsia;
+    background-color: midnightblue;
+    color: yellow;
+}
+body{
+    background-color:lightcoral;
+    color:black ;
+}
+img {
+    height: 400px;
+}
+link {
+    color: white;
+}
+.songQuote {
+    font-style: italic;
+}
+form {
+    background-color: lightcyan;
+}
+table, th, td {
+    border: 1px solid black;
+  }

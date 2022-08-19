@@ -1,0 +1,47 @@
+Bug 1
+-----
+Test that demonstrates problem: updated_timesheet_has_expected_values_when_retrieved
+
+Expected output: 10
+
+Actual output: 1
+
+How did you fix this bug?
+The updateTimesheet method did not update the billable column. Added "billable = ?" to the string sql and added
+updatedTimesheet.isBillable() as the value for billable.
+
+Bug 2
+-----
+Test that demonstrates problem: getTimesheetsByProjectId_returns_list_of_all_timesheets_for_project
+
+Expected output: 3
+
+Actual output: 2
+
+How did you fix this bug?
+Changed the WHERE in the String sql from "employee_id" to "project_id" so it searches the correct column.
+
+
+Bug 3
+-----
+Test that demonstrates problem: getTimesheetsByEmployeeId_returns_list_of_all_timesheets_for_employee
+
+Expected output: 2
+
+Actual output: 1
+
+How did you fix this bug?
+Updated if (results.next()) {} to while (results.next()) {} so that each row returned will be added to the timesheets
+list instead of adding only the first row.
+
+Bug 4
+-----
+Test that demonstrates problem: getBillableHours_returns_correct_total
+
+Expected output: 0.0
+
+Actual output: 2.0
+
+How did you fix this bug?
+Updated the WHERE clause in the sql statement to include "AND billable = true" to ensure that the selected timesheets
+are all billable.

@@ -1,0 +1,47 @@
+
+  #div-container {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  
+  .box {
+    width: 50px;
+    padding: 50px;
+    
+    color: white;
+      
+    font-weight: bold;
+    font-size: 1em;
+    text-align: center;
+    line-height: 45px;
+    
+    
+    margin: 5px;
+    padding: 5px;
+    border: 1px solid black;
+  }
+  
+  
+  .divRed{
+    background-color: red;
+  }
+  .divOrange{
+    background-color: orange;
+  }
+  .divYellow{
+    background-color: yellow;
+    color: black;
+  }
+  .divGreen{
+    background-color: green;
+  }
+  .divBlue{
+    background-color: blue;
+  }
+  .divIndigo{
+    background-color: indigo;
+  }
+  .divViolet{
+    background-color: violet;
+    color: black;
+  }
